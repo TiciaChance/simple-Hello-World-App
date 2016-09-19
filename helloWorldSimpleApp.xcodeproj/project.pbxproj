@@ -14,6 +14,7 @@
 		117D33C81D90177500EB937E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 117D33C61D90177500EB937E /* LaunchScreen.storyboard */; };
 		117D33D31D90177500EB937E /* helloWorldSimpleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117D33D21D90177500EB937E /* helloWorldSimpleAppTests.swift */; };
 		117D33DE1D90177500EB937E /* helloWorldSimpleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117D33DD1D90177500EB937E /* helloWorldSimpleAppUITests.swift */; };
+		6A514F38FFF1043ECC328319 /* Pods_helloWorldSimpleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D568FDFDD680EAB42C909B8D /* Pods_helloWorldSimpleApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,9 @@
 		117D33D91D90177500EB937E /* helloWorldSimpleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = helloWorldSimpleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		117D33DD1D90177500EB937E /* helloWorldSimpleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helloWorldSimpleAppUITests.swift; sourceTree = "<group>"; };
 		117D33DF1D90177500EB937E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		558A67DE2F297EA629DA0EB3 /* Pods-helloWorldSimpleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-helloWorldSimpleApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-helloWorldSimpleApp/Pods-helloWorldSimpleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A3A9418C25787C7D111A1167 /* Pods-helloWorldSimpleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-helloWorldSimpleApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-helloWorldSimpleApp/Pods-helloWorldSimpleApp.release.xcconfig"; sourceTree = "<group>"; };
+		D568FDFDD680EAB42C909B8D /* Pods_helloWorldSimpleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_helloWorldSimpleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A514F38FFF1043ECC328319 /* Pods_helloWorldSimpleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				117D33D11D90177500EB937E /* helloWorldSimpleAppTests */,
 				117D33DC1D90177500EB937E /* helloWorldSimpleAppUITests */,
 				117D33BB1D90177400EB937E /* Products */,
+				562BBF5572A0C0B14C8685D6 /* Pods */,
+				B097FC22FD65607765AF58A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = helloWorldSimpleAppUITests;
 			sourceTree = "<group>";
 		};
+		562BBF5572A0C0B14C8685D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				558A67DE2F297EA629DA0EB3 /* Pods-helloWorldSimpleApp.debug.xcconfig */,
+				A3A9418C25787C7D111A1167 /* Pods-helloWorldSimpleApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B097FC22FD65607765AF58A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D568FDFDD680EAB42C909B8D /* Pods_helloWorldSimpleApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 117D33E21D90177500EB937E /* Build configuration list for PBXNativeTarget "helloWorldSimpleApp" */;
 			buildPhases = (
+				52E31BA246CA834F0A44B255 /* [CP] Check Pods Manifest.lock */,
 				117D33B61D90177400EB937E /* Sources */,
 				117D33B71D90177400EB937E /* Frameworks */,
 				117D33B81D90177400EB937E /* Resources */,
+				025A32543027219194B94F16 /* [CP] Embed Pods Frameworks */,
+				77864AFE608F96B2849841C4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,15 +220,18 @@
 				TargetAttributes = {
 					117D33B91D90177400EB937E = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					117D33CD1D90177500EB937E = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 117D33B91D90177400EB937E;
 					};
 					117D33D81D90177500EB937E = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 117D33B91D90177400EB937E;
 					};
@@ -253,6 +283,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		025A32543027219194B94F16 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-helloWorldSimpleApp/Pods-helloWorldSimpleApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52E31BA246CA834F0A44B255 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		77864AFE608F96B2849841C4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-helloWorldSimpleApp/Pods-helloWorldSimpleApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		117D33B61D90177400EB937E /* Sources */ = {
@@ -410,6 +488,7 @@
 		};
 		117D33E31D90177500EB937E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 558A67DE2F297EA629DA0EB3 /* Pods-helloWorldSimpleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = helloWorldSimpleApp/Info.plist;
@@ -422,6 +501,7 @@
 		};
 		117D33E41D90177500EB937E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3A9418C25787C7D111A1167 /* Pods-helloWorldSimpleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = helloWorldSimpleApp/Info.plist;
@@ -505,6 +585,7 @@
 				117D33E41D90177500EB937E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		117D33E51D90177500EB937E /* Build configuration list for PBXNativeTarget "helloWorldSimpleAppTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +594,7 @@
 				117D33E71D90177500EB937E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		117D33E81D90177500EB937E /* Build configuration list for PBXNativeTarget "helloWorldSimpleAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +603,7 @@
 				117D33EA1D90177500EB937E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
